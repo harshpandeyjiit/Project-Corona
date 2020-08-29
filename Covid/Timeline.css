@@ -1,0 +1,99 @@
+body {
+  background-image: url(back2.jpg);
+  background-size: cover;
+}
+
+.timeline {
+  list-style: none;
+  width: 640px;
+  margin: 10px auto;
+  position: relative;
+  padding: 0;
+}
+.timeline:before {
+  content: '';
+  width: 6px;
+  border: 3px solid #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: blue;
+  z-index: -2;
+}
+
+.timeline:after 
+{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.timeline .time 
+{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.timeline .time .content 
+{
+  background: #fff;
+  border: 3px solid #ccc;
+  padding: 3px 10px;
+  font-size: 12px;
+  color: #ccc;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  z-index: 2;
+  color: #ccc;
+}
+.timeline .time:first-child 
+{
+  margin-top: 0;
+}
+
+.timeline .time:last-child 
+{
+  margin-bottom: 0;
+}
+
+.timeline .branch 
+{
+  background: #fff;
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 275px;
+  float: left;
+  margin: 15px 23px 15px 0;
+}
+
+.timeline .branch .content 
+{
+  font-size: 14px;
+  position: relative;
+}
+
+
+.timeline .branch .content h3 
+{
+  margin: 0;
+}
+
+.timeline .branch .content p 
+{
+  margin: 0 0 5px;
+}
+
+.timeline .branch:nth-child(2n+1) 
+{
+  float: right;
+  margin: 15px 0 15px 25px;
+}
+
